@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    border: 2px solid #0F1824;
+    font-family: 'Montserrat', sans-serif; /* Cambia el tipo de letra */
+    background-image: url('leyvaley.png'); /* Establece la imagen de fondo */
+    background-size: cover; /* Escala la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+#header {
+    background-color: rgba(15, 24, 36, 0.8); /* Ajusta el color de fondo del encabezado con transparencia */
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Espacio interno del encabezado */
+}
+
+#header a img {
+    width: 150px;
+    height: auto;
+}
+
+#header button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #001F3D; /* Color de fondo de la empresa #0F1824 */
+    color: white; /* Color del texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+#header button:hover {
+    background-color: #0F1824; /* Cambia el color de fondo al pasar el ratón 001F3D */
+}
+
+#contenedor {
+    background-color: rgba(15, 24, 36, 0.8); /* Ajusta el color de fondo del contenedor con transparencia */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#body {
+    max-width: 800px; /* Ancho máximo del contenido */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+#body img {
+    width: 100%;
+    max-width: 500px; /* Ancho máximo de la imagen */
+    height: auto;
+    margin-top: 20px;
+}
+
+#body h1, #body h2, #body h3 {
+    margin: 10px 0;
+}
+
+#body h1 {
+    font-size: 24px;
+}
+
+#body h2 {
+    font-size: 20px;
+}
+
+#body h3 {
+    font-size: 18px;
+}
+
+#body button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0F1824; /* Color de fondo de la empresa */
+    color: white; /* Color del texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+#body button:hover {
+    background-color: #001F3D; /* Cambia el color de fondo al pasar el ratón */
+}
+
+#pie {
+    height: 50px;
+    background-color: rgba(15, 24, 36, 0.8); /* Ajusta el color de fondo del pie con transparencia */
+}

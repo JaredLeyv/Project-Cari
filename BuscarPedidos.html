@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar ventas</title>
+    <link rel="stylesheet" href="assets/Estilos/BuscarPedido.css?v=1.0">
+</head>
+<body>
+    <div class="form-container">
+        <h2 style="color: white;">Buscar ventas</h2>
+        <form action="Pedido.php" method="POST">
+            <label for="tipoBusqueda" style="color: white;">Tipo de búsqueda:</label>
+            <select name="tipoBusqueda" id="tipoBusqueda" required onchange="mostrarCampo()">
+                <option value="vendedor">Buscar ventas por vendedor</option>
+                <option value="fecha">Buscar ventas por fecha</option>
+            </select>
+
+            <div id="vendedor">
+                <label for="NombreCliente" style="color: white;">Nombre del vendedor</label>
+                <input type="text" id="NombreCliente" name="NombreCliente" style="background-color: #0F1824">
+            </div>
+
+            <div id="fecha" style="display: none;">
+                <label for="fechaVenta" style="color: white;">Fecha de la venta</label>
+                <input type="date" id="fechaVenta" name="fechaVenta">
+            </div>
+
+            <button type="submit">Buscar</button>
+            
+
+            <br>
+            <br> 
+
+           <button type="button" class="button" onclick="window.location.href='OpcionesAdministrador.php'">Regresar</button>
+        </form>
+        
+    </div>
+
+    <script>
+        function mostrarCampo() {
+            var tipoBusqueda = document.getElementById("tipoBusqueda").value;
+            var divVendedor = document.getElementById("vendedor");
+            var divFecha = document.getElementById("fecha");
+
+            if (tipoBusqueda === "vendedor") {
+                divVendedor.style.display = "block";
+                divFecha.style.display = "none";
+            } else if (tipoBusqueda === "fecha") {
+                divVendedor.style.display = "none";
+                divFecha.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

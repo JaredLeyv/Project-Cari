@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="assets/Estilos/RegistrarUsuario.css?v=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Nuevo Usuario del Cliente</h2>
+
+        <form action="RegistrarUsuario.php" method="POST">
+            <div class="input-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="input-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="input-group">
+                <label for="numero_celular">Número de Celular:</label>
+                <input type="text" id="numero_celular" name="numero_celular">
+            </div>
+            
+            <div class="input-group">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="passwor">Contraseña:</label>
+                <input type="text" id="passwor" name="passwor" required>
+            </div>
+            <button type="submit">Terminar</button>
+        </form>
+    </div>
+
+</body>
+</html>

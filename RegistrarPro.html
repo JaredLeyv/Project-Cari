@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/Estilos/FormularioProducto.css?v=1.0">
+    <title>Ingresar un nuevo producto</title>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: white;">Registro de Producto</h2>
+        <form action="RegistrarProducto.php" method="POST">
+            <div class="input-group">
+                <label for="NombreProducto">Nombre del Producto:</label>
+                <input type="text" id="NombreProducto" name="NombreProducto" required>
+            </div>
+            <div class="input-group">
+                <label for="PrecioXkg">Precio por unidad:</label>
+                <input type="number" id="PrecioXkg" name="PrecioXkg" step="0.01" required>
+            </div>
+            <div class="input-group">
+                <label for="Categoria">Categoria del producto:</label>
+                <input type="text" id="Categoria" name="Categoria" required>
+            </div>
+            <button type="submit" class="btn-login">Registrar</button>
+            
+        </form>
+        <br>
+        <button class="regresar"><a href="OpcionesAdministrador.php">Regresar</a></button>
+    </div>
+</body>
+</html>
